@@ -1,0 +1,27 @@
+Password Regex: https://gist.github.com/arielweinberger/18a29bfa17072444d45adaeeb8e92ddc
+
+typeOrm: https://github.com/typeorm/typeorm/blob/master/docs/entities.md
+https://github.com/typeorm/typeorm/blob/master/docs/custom-repository.md
+http://typeorm.delightful.studio/classes/_repository_repository_.repository.html
+
+NestJs Logger: https://docs.nestjs.com/techniques/logger
+
+npm config module: expects config folder in the root of the application, not the src folder
+
+About Elastic Beanstalk:
+is service from AWS, that allows us to deploy applications. it has cool features.
+we can define an application and then deploy multiple environments of that application.
+Beanstalk will also configure logging for us, load balancing, networking, security groups... all this automatically!!
+we can even use it to define a database for us.
+In Beanstalk, everything is setup for us as part of the same deployment. This means, if we delete a depoloyment, we also delete everything.
+
+Jest:
+Jest automatically sets NODE_ENV to NODE_ENV=test, so we set it manually to development.
+Jest automatically looks for files ending with ".spec.ts"
+I don't want to run just run my test once, I want to watch my spec files. So anytime a spec file changes, I want to run my test again.
+so I run it by watch flag:
+$ yarn test --watch
+
+Jest mock functions: https://jestjs.io/docs/mock-function-api
+mock functions can a lot for us. it can track how many times a function has called, it can track parameters with which a function has called.
+it can simulate a certain behavior that we want for our specific testcase 

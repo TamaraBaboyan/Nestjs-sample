@@ -1,0 +1,5 @@
+server:
+  origin: https://nestjs-task-management-front-end-monalisa.s3.eu-west-3.amazonaws.com/index.html
+
+db:
+  synchronize: false
